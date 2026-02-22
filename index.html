@@ -241,28 +241,34 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">When Data is Scarce, Learn to Adapt: Robust Federated Learning via
+              Adversarial Meta-Optimization</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://hossainzarif.github.io/" target="_blank">Md Zarif Hossain</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Awal Ahmed Fime</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="https://sites.google.com/view/imteaj-cs/" target="_blank">Ahmed Imteaj</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
+                    <span class="author-block">Florida Atlantic University (FAU)<br>CVPR 2026 Findings</span>
                     <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
-                  <div class="column has-text-centered">
+
+                  <div class="is-size-5 publication-authors">
+                    <!-- TODO: Replace with your institution and conference/journal info -->
+                    <span class="author-block" style="color: rgb(0, 145, 255);">Preprint and code will be available soon!</span>
+                    <!-- TODO: Remove this line if no equal contribution -->
+                  </div>
+
+                  <!-- <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
                       <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
@@ -273,7 +279,6 @@
                       </a>
                     </span>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
                     <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
@@ -284,7 +289,6 @@
                     </a>
                   </span>
 
-                  <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
@@ -294,8 +298,6 @@
                     <span>Code</span>
                   </a>
                 </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
@@ -304,7 +306,7 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
@@ -314,23 +316,33 @@
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
+<section class="section" id="results">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+  <h3 class="title is-4 has-text-centered" style="color: #163d6e;">
+    FAML achieves SOTA robustness with single adversarially trained client
+  </h3>
+    
+    <div class="content has-text-justified" style=" color: black;">
+      <p>
+        Comparison of robust and clean accuracy on CIFAR10
+        and CIFAR100 with varying numbers of AT-performing clients in
+        FAML. <strong>Notably, even with a single AT-performing client, FAML, even with a single AT-performing client, FAML
+        attains robustness comparable to the full-AT setting while preserving
+        higher clean accuracy.</strong>
+      </p>
+    </div>
+    
+    <div style="text-align:center; margin-bottom:2px;">
+      <img src="static/images/res9.png"
+           alt="t-SNE visualization"
+           style="max-width:120%; width:1000px; "
+           loading="lazy"/>
     </div>
   </div>
+
 </section>
-<!-- End teaser video -->
+
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -340,132 +352,245 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+       
+            <strong>Federated Learning (FL)</strong> enables collaborative model training without direct data sharing, but remains acutely vulnerable to adversarial perturbations. While recent efforts in <strong>Federated Adversarial Training (FAT)</strong> have adapted centralized adversarial defenses to the distributed setting, their performance significantly deteriorates under data scarcity and hardware heterogeneity, where clients possess varying computational capabilities.
+            To address these limitations, we propose <strong>FAML (Federated Adversarial Meta-Learning)</strong>, a novel FAT framework that leverages the fast adaptation capability of meta-learning to learn transferable robust priors in data-scarce and heterogeneous federated environments. FAML introduces two KL-based drift regularizers to mitigate client drift and employs an adaptive entropy-based mask that dynamically adjusts the regularization strength according to the confidence and correctness of the global model, ensuring stable convergence.
+         Extensive experiments on four benchmark datasets demonstrate that FAML achieves state-of-the-art clean and robust performance while using only 20% of the training data and a single adversarially trained client under both IID and non-IID scenarios. Specifically, FAML improves robust accuracy by 2.34% ~ 22.81% under five adversarial attacks and reduces computation time per round by 3.5&times; compared to the best FAT baseline. Moreover, FAML achieves an average improvement of 31.76% in out-of-domain generalization while maintaining strong scalability.
+      
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contributions">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered" style="color: black;">Contributions</h2>
+        <div class="content has-text-justified" style="color: black;">
+          <ul>
+            <li>
+              We propose <strong>FAML</strong>, a federated adversarial meta-learning framework designed for robust learning under
+              data scarcity and client heterogeneity.
+            </li>
+            <li>
+              We show that <strong>a single adversarially trained client is sufficient to propagate robustness</strong> across the federation,
+              removing the need for adversarial training at every client.
+            </li>
+            <li>
+              FAML achieves strong clean and robust performance using <strong>only 20% of the training data</strong>,
+              enabling robust federated learning in highly data-scarce regimes.
+            </li>
+      
+        
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
 
+<!-- Robustness & Stability Analysis -->
+<!-- Robustness & Stability (Reference-style layout) -->
+<section class="section" id="analysis">
+  <div class="container is-max-desktop">
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+    <h2 class="title is-3">Robustness & Stability</h2>
+
+    <div class="content">
+      <p>
+        In <strong>FAML</strong>, we leverage meta-learning to tackle <strong>data scarcity</strong> and <strong>client heterogeneity</strong>.
+        However, robust federated learning also requires <strong>stable aggregation</strong> under non-IID drift and increasing attack strength.
+        We therefore examine robustness under stronger perturbations and the evolution of model drift across rounds.
+      </p>
+    </div>
+
+    <!-- Two figures side-by-side -->
+    <div class="columns is-variable is-6 is-vcentered" style="margin-top:10px;">
+
+      <!-- Left -->
+      <div class="column is-half">
+        <figure class="image">
+          <img src="static/images/attack_strength_plot.jpg"
+               alt="Robust Accuracy vs Attack Strength"
+               style="width: 90%; height: auto;">
+        </figure>
+
+        <p class="is-size-6" style="margin-top:10px;">
+          <strong>Robust Accuracy vs. Attack Strength.</strong>
+          FAML remains robust as perturbations increase, while weaker meta-learning variants degrade rapidly.
+        </p>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
+
+      <!-- Right -->
+      <div class="column is-half">
+        <figure class="image">
+          <img src="static/images/model_drift_plot.jpg"
+               alt="Model Drift over Communication Rounds"
+               style="width: 95%; height: auto;"
+               loading="lazy">
+        </figure>
+
+        <p class="is-size-6" style="margin-top:10px;">
+          <strong>Model Drift over Communication Rounds.</strong>
+          FAML reduces drift and stabilizes convergence, even under stronger perturbation budgets.
+        </p>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
+
     </div>
   </div>
+</section>
+
+
+<section class="section" id="results">
+  <div class="container is-max-desktop">
+
+    <!-- Section Title -->
+    <h2 class="title is-3 has-text-centered">Experimental Results</h2>
+
+    <!-- Intro Summary -->
+    <h3 class="title is-4 has-text-centered" style="margin-top:60px;">
+      Clean and Robust Performance      </h3>
+    <div class="content has-text-justified" style="margin-bottom:30px; color: black;">
+      <p>
+        We evaluate FAML against state-of-the-art federated adversarial training baselines
+        across CIFAR10, SVHN, FMNIST, and CIFAR100 under multiple attack settings.
+        FAML consistently achieves stronger clean and robust performance,
+        demonstrating that <strong>a single adversarially trained client is sufficient for SOTA performance</strong>
+        across the federation while requiring only <strong>20% of the training data</strong>.
+      </p>
+    </div>
+
+    <!-- ================= MAIN TABLE ================= -->
+    <div style="text-align:center; margin-bottom:50px;">
+
+      <img src="static/images/res2.png"
+           alt="Main results comparison"
+           style="max-width:100%; width:1000px;"
+           loading="lazy"/>
+    </div>
+
+  <!-- ===================================================== -->
+  <h3 class="title is-4 has-text-centered" style="margin-top:60px;">
+    Feature Representation Analysis
+    </h3>
+    
+    <div class="content has-text-justified" style="margin-bottom:30px; color: black;">
+      <p>
+        We visualize feature embeddings using t-SNE to examine class separability.
+        Compared to prior FAT baselines, FAML produces more compact and well-separated clusters,
+        indicating improved feature robustness and alignment across clients.
+      </p>
+    </div>
+    
+    <div style="text-align:center; margin-bottom:60px;">
+      <img src="static/images/res1.png"
+           alt="t-SNE visualization"
+           style="max-width:120%; width:1000px; "
+           loading="lazy"/>
+    </div>
+
+
+    <h3 class="title is-4 has-text-centered" style="margin-top:60px;">
+      Feature Representation Analysis
+      </h3>
+      
+      <div class="content has-text-justified" style="margin-bottom:30px; color: black;">
+        <p>
+          Clean and PGD-20 robust accuracy of FAT methods on CIFAR10 and SVHN
+          with varying training data ratios. FAML achieves SOTA performance even with only <strong>20% of the training data</strong>.
+        </p>
+      </div>
+      
+      <div style="text-align:center; margin-bottom:60px;">
+        <img src="static/images/res8.png"
+             alt="t-SNE visualization"
+             style="max-width:120%; width:1000px; "
+             loading="lazy"/>
+      </div>
+
+<!-- ===================================================== -->
+<h3 class="title is-4 has-text-centered" style="margin-top:60px;">
+  Scalability Performance
+  </h3>
+  
+  <div class="content has-text-justified" style="margin-bottom:30px; color: black;">
+    <p>
+      Clean and robust accuracy across different numbers of clients K = {10, 20, 50} on CIFAR10 and SVHN datasets under PGD-20
+      and AutoAttack (AA) at ϵ = 8/255. FAML consistently outperforms all baselines, demonstrating strong robustness and scalability
+    </p>
+  </div>
+  
+  <div style="text-align:center; margin-bottom:50px;">
+    <img src="static/images/res3.png"
+         alt="K-shot evaluation results"
+         style="max-width:100%; width:1000px;"
+         loading="lazy"/>
+  </div>
+  
+  
+  <!-- ===================================================== -->
+  <h3 class="title is-4 has-text-centered" style="margin-top:60px;">
+  Non-IID vs IID Performance (β Analysis)
+  </h3>
+  
+  <div class="content has-text-justified" style="margin-bottom:30px; color: black;">
+    <p>
+      Under severe non-IID settings (β = 0.05) and IID conditions (β = 10),
+      FAML maintains strong robustness and stability.
+      The results show that our proposed approach achieves SOTA performance even in highly heterogeneous federated environments.
+    </p>
+  </div>
+  
+  <div style="text-align:center; margin-bottom:50px;">
+    <img src="static/images/res3.png"
+         alt="Non-IID vs IID results"
+         style="max-width:100%; width:1000px; "
+         loading="lazy"/>
+  </div>
+  
+  
+  <!-- ===================================================== -->
+  <h3 class="title is-4 has-text-centered" style="margin-top:60px;">
+  Out-of-Domain Generalization
+  </h3>
+  
+  <div class="content has-text-justified" style="margin-bottom:30px; color: black;">
+    <p>
+      To evaluate transfer robustness, we test models trained on one dataset
+      and evaluate on out-of-domain datasets.
+      FAML demonstrates significantly stronger cross-dataset robustness compared to prior methods,
+      highlighting the effectiveness of transferable robust priors learned via meta-optimization.
+    </p>
+  </div>
+  
+  <div style="text-align:center; margin-bottom:50px;">
+    <img src="static/images/res5.png"
+         alt="Cross dataset evaluation"
+         style="max-width:65%; width:900px;"
+         loading="lazy"/>
+  </div>
+  
+  
+
+
 </div>
-</div>
 </section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
 
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
 
-      <!-- TODO: Replace with your poster PDF -->
       <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
           </iframe>
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
@@ -480,13 +605,14 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
+      <!-- <pre id="bibtex-code"><code>@article{YourPaperKey2024,
   title={Your Paper Title Here},
   author={First Author and Second Author and Third Author},
   journal={Conference/Journal Name},
   year={2024},
   url={https://your-domain.com/your-project-page}
-}</code></pre>
+}</code></pre> -->
+Coming soon
     </div>
 </section>
 <!--End BibTex citation -->
@@ -499,8 +625,7 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+ <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
 
