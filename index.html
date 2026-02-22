@@ -410,9 +410,14 @@
 
     <div class="content">
       <p>
-        In <strong>FAML</strong>, we leverage meta-learning to tackle <strong>data scarcity</strong> and <strong>client heterogeneity</strong>.
-        However, robust federated learning also requires <strong>stable aggregation</strong> under non-IID drift and increasing attack strength.
-        We therefore examine robustness under stronger perturbations and the evolution of model drift across rounds.
+        Federated meta-learning follows a bi-level optimization process (inner and outer updates). We first investigate where robustness regularization should be applied for maximum effectiveness under client heterogeneity.
+
+        We compare two variants: applying robustness only during the outer update (FAMLquery) versus during both inner and outer updates (FAMLboth). As shown in the left figure, regularizing only the outer update is sufficient to achieve strong robust accuracy, while avoiding the extra computational cost of full bi-level adversarial training.
+        
+        We further analyze training stability. The right figure shows that FAML suffers from client drift across communication rounds with higher perturbation strength. 
+      </p>
+      <p>
+        <strong>To address this issue, we propose a novel adaptive entropy-based mask and a KL-based drift regularizer to mitigate client drift and ensure stable convergence.</strong>
       </p>
     </div>
 
@@ -429,7 +434,7 @@
 
         <p class="is-size-6" style="margin-top:10px;">
           <strong>Robust Accuracy vs. Attack Strength.</strong>
-          FAML remains robust as perturbations increase, while weaker meta-learning variants degrade rapidly.
+          Introducing robustness regularization during the outer update is sufficient to achieve strong robust accuracy.
         </p>
       </div>
 
@@ -444,12 +449,13 @@
 
         <p class="is-size-6" style="margin-top:10px;">
           <strong>Model Drift over Communication Rounds.</strong>
-          FAML reduces drift and stabilizes convergence, even under stronger perturbation budgets.
-        </p>
+Without any regularization, FAML suffers from significant client drift across communication rounds with higher perturbation strength.        </p>
       </div>
 
     </div>
+    
   </div>
+  
 </section>
 
 
